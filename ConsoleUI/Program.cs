@@ -1,4 +1,5 @@
 ﻿using System;
+using FrameworkLibrary;
 
 namespace ConsoleUI
 {
@@ -6,7 +7,19 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            // Program logic goes here
+            Generators generators = new Generators();
+            PersonModel person = new PersonModel
+            {
+                Prefix = "Mr",
+                FirstName = "Tim",
+                LastName = "Corey"
+            };
+
+
+        string message = generators.WelcomeMesage(person.Prefix, person.LastName);
+            Console.WriteLine(message);
+            
+            Console.ReadLine();
         }
     }
 }
