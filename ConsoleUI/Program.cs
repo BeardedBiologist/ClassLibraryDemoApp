@@ -1,5 +1,5 @@
 ﻿using System;
-using FrameworkLibrary;
+using CoreLibrary;
 
 namespace ConsoleUI
 {
